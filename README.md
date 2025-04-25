@@ -1,34 +1,24 @@
-# ai-assistant-moodle-block-plugin
-A Moodle block plugin that integrates an AI virtual assistant powered by OpenRouter.ai, allowing students to interact with an intelligent assistant through text chat to get help with course content.
 
-# Virtual Assistant Block for Moodle
+# Moodle-Block: Virtueller Lehrer
 
-A Moodle block that integrates an AI virtual assistant into your course pages. This plugin enables students to interact with an AI assistant that can answer questions about course content through text chat.
+## Beschreibung
+Dieser Moodle-Block zeigt ein Bild eines virtuellen Lehrers mit zwei Interaktionsoptionen:
+- Textbasierter Chat mit einem KI-Modell (z. B. Gemini über OpenRouter.ai)
+- (Platzhalter) Sprachinteraktion
 
-## Features
-- Adds a virtual assistant avatar to your Moodle courses
-- Connects to OpenRouter.ai API for AI responses
-- Provides contextual help based on course content and student information
-- Clean, intuitive chat interface
-- Prepared for future voice interaction capabilities
+Der Chat wird über ein externes API angebunden und ermöglicht eine direkte Kommunikation mit einem KI-Modell.
 
-## Requirements
-- Moodle 4.1+
-- OpenRouter API key
+## Anforderungen
+- Moodle 4.1 oder höher
+- API-Zugang zu OpenRouter.ai (API-Key und Modell erforderlich)
 
 ## Installation
-1. Download the ZIP file from this repository
-2. Log in to your Moodle site as an administrator
-3. Go to Site Administration > Plugins > Install plugins
-4. Upload the ZIP file
-5. Follow the on-screen instructions to complete the installation
-6. Add the block to your courses or dashboard
+1. Ordner `block_virtualteacher` in das Verzeichnis `moodle/blocks/` kopieren
+2. Moodle als Administrator aufrufen und die Installation abschließen
+3. Den Block zu einem Kurs oder zur Startseite hinzufügen
 
-## Configuration
-Update the API configuration in `api.php` with your OpenRouter API key and preferred AI model.
+## Konfiguration
+Die Datei `api.php` enthält die Zugangsdaten und API-Konfiguration. Hier können Modell, Schlüssel und URL angepasst werden.
 
-## Security Note
-For production environments, API credentials should be stored securely rather than directly in the code.
-
-## License
-This project is licensed under the MIT License with Attribution Copyright (c) [Dmytro Skyrta] [github.com/dmytro-skyrta].
+## Sicherheitshinweis
+Für den Produktionseinsatz sollten API-Zugangsdaten nicht im Klartext gespeichert werden.

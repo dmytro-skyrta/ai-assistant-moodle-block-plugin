@@ -1,0 +1,16 @@
+<div class="block_virtualteacher">
+    <img src="{{config.wwwroot}}/blocks/virtualteacher/pix/teacher.png" alt="Virtual Teacher" class="virtual-teacher-image">
+
+    <div class="actions">
+        <button id="chat-btn" class="chat-btn">💬 Chat</button>
+        <button id="voice-btn" class="voice-btn">🎙 Sprache</button>
+    </div>
+
+    <div id="chat-container" class="chat-container" style="display: none;">
+        <textarea id="chat-input" placeholder="Stellen Sie Ihre Frage..."></textarea>
+        <button id="send-msg" class="btn btn-primary">Senden</button>
+        <div id="chat-response">
+            <!-- Здесь будут отображаться сообщения -->
+        </div>
+    </div>
+</div>
